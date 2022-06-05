@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;1,700&family=Roboto:wght@300&family=Sacramento&display=swap');
+html{
+    font-size: 17px;
+}
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1d1d1d;
+}
+nav {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #393939;
+    border-radius: 15px;
+    position: relative;
+}
+
+nav .logo {
+    width: 15%;
+    height: 100%;
+}
+nav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+nav .menu {
+    width: 15%;
+    height: 100%;
+    display: flex;
+}
+nav .menu .menu-item {
+    width: 33%;
+    height: 100%;
+    border-left: 1px solid #393939;
+    align-items: center;
+    justify-content:  center;
+    display: flex;
+}
+nav .menu .menu-item i {
+    color: #999;
+    font-size: 22px;
+}
+main {
+    width: 100%;
+    margin-top: 10px;
+   
+}
+main .big {
+    width: 90%;
+    margin:auto;
+    height: 900px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows:  repeat(5, 190px);
+}
+
+main .big button {
+    width: 400%;
+    height: 40px;
+    background-color: black;
+    box-shadow: none;
+    border: none;
+    border-radius: 15px;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+main .big button p {
+    color: #999;
+}
+main .big .child {
+     width: 99%;
+     border-radius: 10px;
+     position: relative;
+}
+main .big  .child img {
+    width: 100%;
+     height: 93%;
+     object-fit: cover;
+     border-radius: 15px;
+     margin-top: 12px;
+     display: flex;
+}
+main .big  .child .text {
+    position:absolute;
+    top: 0;
+    right:0 ;
+    left :0;
+    bottom:0 ;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 12px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7) , rgba(255,255,255,0.1) );
+    border-radius: 15px;
+}
+main .big .child .text h4 {
+    color: white;
+    padding: 10px;
+}
+main .big .child .text:hover h4{
+    color: #00b3ff;
+}
+@media screen and (max-width:960px) {
+    main .big {
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows:  repeat(3, 190px);
+}
+}
+main .gol {
+    width: 95%;
+    height: 300px;
+    margin-left: 15px;
+}
+main .gol img {
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    object-fit: contain;
+    justify-content: space-between;
+}
+main .buleg {
+    width: 90%;
+    margin: auto;
+}
+main .buleg {
+    width: 90%;
+    overflow-x: scroll ;
+    position: relative;
+    margin-left: 65px;
+    margin-right: 20px;
+   
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(172, 170, 170, 0.705);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+main .buleg .neg h3 {
+    color: #999;
+    margin-top: 25px;
+
+}
+main .buleg .hoyor {
+    width:100%;
+    display: flex;
+    gap: 15px;
+    
+}
+main .buleg .hoyor .childe {
+    width: 16%;
+    height: 270px;
+    border-radius:10px ;
+    position: relative;
+}
+main .buleg .hoyor .childe img {
+    width: 188x;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    gap: 10px;
+}
+main .buleg .hoyor .childe .teext {
+    position:absolute;
+    top: 0;
+    right:0 ;
+    left:0;
+    bottom:0 ;
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0.1));
+    display: none;
+    border-radius: 10px;
+}
+main .buleg .hoyor .childe .teext h5 {
+    color:  #007aff;
+    justify-content: space-between;
+}
+main .buleg .hoyor .childe .teext p {
+    color:  white;
+}
+main .buleg  .hoyor .childe:hover .teext{
+    display: flex;
+}
+@media screen and (max-width:960px ) {
+    main .big {
+        grid-template-rows:repeat(3,33%) ;
+        grid-template-columns: repeat(4,200px);
+    }
+}
+footer {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #393939 ;
+    border-top: 1px solid #393939;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+footer .big3 {
+    width: 15%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+footer .big3 .nail {
+    width: 33%;
+    height: 100%;
+    border-left: 1px solid #393939;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+footer .big3 .nail i {
+    color: #999;
+}
+footer p {
+    padding-top: 25px;
+    border-top: 1px solid #393939;
+    width: 100%;
+color: #999;
+text-align: center;
+}
+nav .menu .menu-item .drop {
+    width: 27%;
+    position: absolute;
+    top: 61px;
+    display: none;
+    right: 0;
+    z-index: 100;
+}
+nav .menu .menu-item .drop .drop-item {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b3ff;
+}
+nav .menu .menu-item .drop .drop-item .drop-icon{
+    width: 85%;
+    height: 55%;
+    display: flex;
+    background-color: #FFFF;
+    align-items: center;
+    justify-content: center;
+    justify-content: right;
+    border-radius: 5px;
+} 
+nav .menu .menu-item .drop .drop-item .drop-icon i{
+    z-index: 100;
+    justify-content: right;
+}
+nav  .menu .menu-item .drop .drop-item .drop-icon input {
+    width: 80%;
+    height: 40px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    position: absolute;
+    color: #1d1d1d;
+}
+nav .menu .menu-item .ll {
+    width: 20%;
+    height: 350px;
+    background-color: #161616;
+    position: absolute;
+    top: 61px;
+    display: none;
+    right: 0%;
+    z-index: 100;
+     border-top: 2px solid #00b3ff;
+}
+nav .menu .menu-item .mm{
+    width: 20%;
+    height: 260px;
+    background-color: #161616;
+    position: absolute;
+    top: 61px;
+    display: none;
+    right: 0%;
+    z-index: 100;
+    border-top: 2px solid #00b3ff;
+}
+nav .menu .menu-item .ll .chill {
+    width: 85%;
+    height: 20.11px;
+    margin-top: 25px;
+    margin-left: 20px;
+    right: 0%;
+    border-top: 1px dotted whitesmoke;
+    justify-content: space-between;
+    display: flex;
+}
+nav .menu .menu-item .ll .chill1{
+    width: 85%;
+    height: 20.11px;
+    margin-top: 20px;
+    margin-left: 20px;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+nav .menu .menu-item .ll .chill1 .neg {
+    display: flex;
+}
+nav .menu .menu-item .ll .chill1 .neg p{
+    color: white;
+    margin-left: 10px;
+    margin-top: 6px;
+} 
+nav .menu .menu-item .ll .chill1 .hoyor p{
+    color: white;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+nav .menu .menu-item .ll .chill1 .neg i{
+    margin-top: 5px;
+}
+nav .menu .menu-item .ll .chill .neg {
+    display: flex;
+}
+nav .menu .menu-item .ll .chill .neg p{
+    color: white;
+    margin-left: 10px;
+    margin-top: 6px;
+} 
+nav .menu .menu-item .ll .chill .hoyor p{
+    color: white;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+nav .menu .menu-item .ll .chill .neg i{
+    margin-top: 6px;
+}
+nav .menu .menu-item .ll .chill:hover .neg i{
+    color: #00b3ff;}
+nav .menu .menu-item .ll .chill:hover .hoyor p{
+    color: #00b3ff;
+}
+nav .menu .menu-item .ll .chill:hover .neg p{
+    color: #00b3ff;
+}
+nav .menu .menu-item .ll .chill1:hover .neg i{
+    color: #00b3ff;}
+nav .menu .menu-item .ll .chill1:hover .hoyor p{
+    color: #00b3ff;
+}
+nav .menu .menu-item .ll .chill1:hover .neg p{
+    color: #00b3ff;
+}
+nav .menu .menu-item .mm .chill {
+    width: 85%;
+    height: 20.11px;
+    margin-top: 25px;
+    margin-left: 20px;
+    right: 0%;
+    border-top: 1px dotted whitesmoke;
+    justify-content: space-between;
+    display: flex;
+}
+nav .menu .menu-item .mm .chill1{
+    width: 85%;
+    height: 20.11px;
+    margin-top: 20px;
+    margin-left: 20px;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+nav .menu .menu-item .mm .chill1 .neg {
+    display: flex;
+}
+nav .menu .menu-item .mm .chill1 .neg p{
+    color: white;
+    margin-left: 10px;
+    margin-top: 6px;
+} 
+nav .menu .menu-item .mm .chill1 .hoyor p{
+    color: white;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+nav .menu .menu-item .mm .chill1 .neg i{
+    margin-top: 5px;
+}
+nav .menu .menu-item .mm .chill .neg {
+    display: flex;
+}
+nav .menu .menu-item .mm .chill .neg p{
+    color: white;
+    margin-left: 10px;
+    margin-top: 6px;
+} 
+nav .menu .menu-item .mm .chill .hoyor p{
+    color: white;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+nav .menu .menu-item .mm .chill .neg i{
+    margin-top: 6px;
+}
+nav .menu .menu-item .mm .chill:hover .neg i{
+    color: #00b3ff;}
+nav .menu .menu-item .mm .chill:hover .hoyor p{
+    color: #00b3ff;
+}
+nav .menu .menu-item .mm .chill:hover .neg p{
+    color: #00b3ff;
+}
+nav .menu .menu-item .ll .chill1:hover .neg i{
+    color: #00b3ff;}
+nav .menu .menu-item .ll .chill1:hover .hoyor p{
+    color: #00b3ff;
+}
+nav .menu .menu-item .ll .chill1:hover .neg p{
+    color: #00b3ff;
+}
+#check{
+    display: none;
+}
+nav .menu .menu-item #check:checked ~ .drop {
+    display: flex;
+}
+#check1{
+    display: none;
+}
+nav .menu .menu-item #check1:checked ~ .ll {
+    display:block;
+}
+#check2{
+    display: none;
+}
+nav .menu .menu-item #check2:checked ~ .mm {
+    display:block;
+}
